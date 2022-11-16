@@ -1,0 +1,15 @@
+{
+  "name": "export",
+  "version": "0.0.2",
+  "description": "Exports your add-on into a \".mcaddon\", \".mcworld\", \".mctemplate\" automatically.",
+  "main": "export.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Makercamp-SRLs/Regolith-filters.git"
+  },
+  "author": "Fabrimat",
+  "license": "MIT",
+  "dependencies": {
+    "archiver": "^5.3.1"
+  }
+}
