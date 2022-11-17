@@ -3,6 +3,8 @@ Version **0.0.2**
 
 This filter exports the behavior pack and resource pack into a ".mcaddon", ".mcworld" or ".mctemplate" file, ready for distribution.
 
+Based on [@cda94581](https://github.com/cda94581)'s [filter](https://github.com/cda94581/regolith-filters/tree/main/export).
+
 ## Usage
 This filter requires that you have [nodejs](https://nodejs.org/en/) installed.
 
