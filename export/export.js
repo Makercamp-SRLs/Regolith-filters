@@ -44,8 +44,8 @@ function exportWorld(template = false) {
     const bp = JSON.parse(fs.readFileSync("BP/manifest.json"))
     const rp = JSON.parse(fs.readFileSync("RP/manifest.json"))
 
-    const header_rp = [{ "uuid": rp.header.uuid, "version": rp.header.version }]
-    const header_bp = [{ "uuid": bp.header.uuid, "version": bp.header.version }]
+    const header_rp = [{ "pack_id": rp.header.uuid, "version": rp.header.version }]
+    const header_bp = [{ "pack_id": bp.header.uuid, "version": bp.header.version }]
 
     fs.writeFileSync("world_resource_packs.json", JSON.stringify(header_rp))
     fs.writeFileSync("world_behavior_packs.json", JSON.stringify(header_bp))
