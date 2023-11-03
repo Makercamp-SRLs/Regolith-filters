@@ -50,7 +50,7 @@ function exportWorld(template = false) {
     fs.writeFileSync("world_resource_packs.json", JSON.stringify(header_rp))
     fs.writeFileSync("world_behavior_packs.json", JSON.stringify(header_bp))
 
-    const outputWorld = fs.createWriteStream(`../../build/${name}.` + (template ? '.mctemplate' : '.mcworld'), 'utf-8');
+    const outputWorld = fs.createWriteStream(`../../build/${name}.` + (template ? 'mctemplate' : 'mcworld'), 'utf-8');
     const worldArchive = archiver('zip', { zlib: { level: 9 } });
 
     worldArchive.directory('BP/', 'behavior_packs/bp');
